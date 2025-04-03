@@ -6,7 +6,8 @@ const nextConfig = {
     bundlePagesRouterDependencies: true,
     serverExternalPackages: ['react-activity-calendar', 'react-github-calendar'],
     images: {
-        unoptimized: true
+        unoptimized: true,
+        domains: ['example.com']
     },
     webpack: (config, { isServer }) => {
         if (!isServer) {
